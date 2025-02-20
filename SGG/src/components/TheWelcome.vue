@@ -1,7 +1,15 @@
+<script setup>
+  import featured from "@/components/Featured.vue";
+  import About from "@/components/about.vue";
+
+</script>
+
+
+
 <template>
   <div class="studio-gato-galactic">
     <!-- HEADER -->
-    <header class="site-header">
+
       <nav class="navbar">
         <a href="#" class="logo">Studio Gato Galactico</a>
         <ul class="nav-links">
@@ -11,7 +19,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
+
 
     <!-- HERO SECTION -->
     <section id="home" class="hero">
@@ -23,42 +31,16 @@
       </div>
     </section>
 
-    <!-- FEATURED GAMES SECTION -->
-    <section id="games" class="games-section">
-      <h2 class="section-title">Our Games</h2>
-      <p class="section-subtitle">
-        Check out our latest indie adventures, born from our love for epic universes
-        like Halo and beyond.
-      </p>
-      <div class="games-grid">
-        <div v-for="(game, index) in games" :key="index" class="game-card">
-          <img :src="game.image" :alt="game.title" class="game-image" />
-          <h3 class="game-title">{{ game.title }}</h3>
-          <p class="game-description">{{ game.description }}</p>
-        </div>
-      </div>
+
+    <section>
+      <featured />
     </section>
 
-    <!-- ABOUT US SECTION -->
-    <section id="about" class="about-section">
-      <div class="about-content">
-        <h2 class="section-title">About Studio Gato Galactic</h2>
-        <p>
-          Studio Gato Galactic is a passionate team of indie developers on a mission to
-          craft immersive, story-driven games. Our love for the Halo franchise fuels our
-          fascination with epic worlds, cinematic action, and memorable characters.
-        </p>
-        <p>
-          Whether it’s forging new galactic realms or bringing dynamic co-op experiences to life,
-          our focus is on delivering innovative, heartfelt gameplay experiences.
-        </p>
-      </div>
-      <img
-          src="https://images.unsplash.com/photo-1539906605622-ecfcedf1a3ba?auto=format&q=80"
-          alt="About Us"
-          class="about-image"
-      />
-    </section>
+
+    <div>
+      <about />
+    </div>
+
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section">
@@ -165,13 +147,14 @@ export default {
 /* HEADER */
 .site-header {
   background-color: #1a1a1a;
-  padding: 1rem 2rem;
+  width: 100vw;
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
 .navbar {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -205,7 +188,8 @@ export default {
 .hero {
   position: relative;
   height: 70vh;
-  background: url('https://images.unsplash.com/photo-1603481543728-3f92166c4571?auto=format&q=80') no-repeat center/cover;
+  width: 100vw;
+  background: url('/Deck1.png') no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,69 +254,7 @@ export default {
   margin: 1rem auto 2rem;
 }
 
-/* GAMES SECTION */
-.games-section {
-  padding: 2rem;
-}
 
-.games-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.game-card {
-  background-color: #1e1e1e;
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.game-image {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
-
-.game-title {
-  font-size: 1.2rem;
-  color: var(--secondary-color);
-  margin-bottom: 0.5rem;
-}
-
-.game-description {
-  font-size: 1rem;
-  color: #cccccc;
-}
-
-/* ABOUT SECTION */
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.about-content {
-  flex: 1 1 400px;
-}
-
-.about-image {
-  flex: 1 1 400px;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 8px;
-  object-fit: cover;
-}
 
 /* CONTACT SECTION */
 .contact-section {
