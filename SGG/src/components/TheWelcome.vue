@@ -11,7 +11,7 @@
     <!-- HEADER -->
 
       <nav class="navbar">
-        <a href="#" class="logo">Studio Gato Galactico</a>
+        <a href="#" class="logo">Studio Gatooooo Galactico</a>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#games">Games</a></li>
@@ -158,6 +158,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
 .logo {
