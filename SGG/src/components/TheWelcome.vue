@@ -1,5 +1,5 @@
 <script setup>
-  import featured from "@/components/Featured.vue";
+  import featured from "@/components/featured.vue";
   import About from "@/components/about.vue";
 
 </script>
