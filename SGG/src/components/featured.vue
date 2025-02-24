@@ -58,6 +58,7 @@ export default {
 
 .games-grid {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
   max-width: 1200px;
