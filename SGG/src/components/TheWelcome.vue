@@ -32,12 +32,12 @@
     </section>
 
 
-    <section>
+    <section id="games">
       <featured />
     </section>
 
 
-    <div>
+    <div id="about">
       <about />
     </div>
 

@@ -9,26 +9,19 @@ export default {
           title: "Cosmic Claws",
           description: "A feline adventure across cosmic frontiers, filled with platforming, puzzles, and starry surprises.",
           image:
-              "https://images.unsplash.com/photo-1590774605467-290db979b348?auto=format&q=80"
+              "/Deck1.png"
         },
         {
           title: "Starbound Tactics",
           description: "Real-time strategy meets cosmic warfare in this fast-paced, interstellar RTS saga.",
           image:
-              "https://images.unsplash.com/photo-1576495199013-5c564c48f5bc?auto=format&q=80"
+              "/Concierge3-1.jpg"
         },
         {
           title: "Nebula Flight",
           description: "Pilot your ship through galactic dogfights and unravel cosmic mysteries in this indie space sim.",
           image:
-              "https://images.unsplash.com/photo-1553860587-2b9c6154f6b3?auto=format&q=80"
-        },
-        {
-          title: "Halo-Inspired Marathon",
-          description:
-              "Fast-paced FPS action that pays homage to the intense battles and arena-like gameplay we love in Halo.",
-          image:
-              "https://images.unsplash.com/photo-1606059726152-31d7d5eb3294?auto=format&q=80"
+              "Corridor1.png"
         }
       ]}
     }
@@ -42,8 +35,7 @@ export default {
   <section id="games" class="games-section">
     <h2 class="section-title">Our Games</h2>
     <p class="section-subtitle">
-      Check out our latest indie adventures, born from our love for epic universes
-      like Halo and beyond.
+      Check out our latest indie adventures, born from our love for epic universes.
     </p>
     <div class="games-grid">
       <div v-for="(game, index) in games" :key="index" class="game-card">
