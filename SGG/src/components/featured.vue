@@ -9,16 +9,16 @@ export default {
           title: "Cosmic Claws",
           description: "A feline adventure across cosmic frontiers, filled with platforming, puzzles, and starry surprises.",
           image:
-              "/Deck1.png"
+              "/Room1.jpg"
         },
         {
           title: "Starbound Tactics",
-          description: "Real-time strategy meets cosmic warfare in this fast-paced, interstellar RTS saga.",
+          description: "Find your way home in this tactical RPG, where every decision shapes your journey.",
           image:
               "/Concierge3-1.jpg"
         },
         {
-          title: "Nebula Flight",
+          title: "Eclipse Cannon Interactive",
           description: "Pilot your ship through galactic dogfights and unravel cosmic mysteries in this indie space sim.",
           image:
               "Corridor1.png"

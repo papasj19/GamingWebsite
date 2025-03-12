@@ -10,7 +10,7 @@
         info: [
           {
             title: "About Us",
-            image: "/emblem.PNG"
+            image: "/icon.png"
           }
         ]
       }
